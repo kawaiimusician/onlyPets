@@ -17,7 +17,7 @@ let userSchema = Schema({
         description: String,
         timestamp: {
             type: String,
-            default: format(new Date(), 'mm-dd-yyyy')
+            default: format(new Date(), 'MM/dd/yyyy')
         },
         sortingStamp: {
             type: String,

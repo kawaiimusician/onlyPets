@@ -5,6 +5,7 @@ font-family: 'WindSong', cursive; */
 .latoOnly {
     font-family: 'Lato', sans-serif;
     font-size: 50px;
+    color: black;
 
 }
 
@@ -233,4 +234,8 @@ img {
     background-color: rgb(238, 238, 238);
     color: white;
     background-color: orange;
+}
+
+.onlyLogoStyle {
+    text-decoration: none;
 }
