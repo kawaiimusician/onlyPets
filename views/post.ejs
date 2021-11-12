@@ -1,0 +1,15 @@
+<%- include('partials/navtop') %>
+
+<form action="/uploadPost" method="POST" enctype="multipart/form-data">
+    <label for="image">Image:</label>
+    <div>
+        <input type="file" name="image" accept="image/*" required>
+    </div>
+    <label for="desc">Description:</label>
+    <div>
+        <textarea name="desc" rows="4" cols="40" placeholder="Type description here"></textarea>
+    </div>
+    <button type="submit" class="btn submitButton">Post</button>
+</form>
+
+<%- include('partials/navbottom') %>

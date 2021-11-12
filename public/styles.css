@@ -1,0 +1,236 @@
+/* font-family: 'Lato', sans-serif;
+font-family: 'WindSong', cursive; */
+
+/* OnlyPets logo styling */
+.latoOnly {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+
+}
+
+.windSongPets {
+    font-family: 'WindSong', cursive;
+    font-size: 60px;
+    color: orange;
+}
+
+.fa-paw {
+    color: orange;
+}
+
+
+/* login */
+.loginSection {
+    text-align: center;
+}
+
+.orText {
+    color: gray;
+    font-size: 20px;
+}
+
+.loginButton {
+    background-color: orange;
+    font-weight: bold;
+    color: white;
+}
+
+.loginButton:hover {
+    background-color: rgb(223, 145, 0);
+    font-weight: bold;
+    color: white;
+}
+
+.alertText {
+    color: red;
+}
+
+.img {
+    margin: 0;
+    padding: 5px;
+}
+
+img {
+    border: 7px solid orange;
+    box-shadow: 4px 4px 8px gray;
+}
+
+.navigation {
+    background-color: rgb(238, 238, 238);
+    position: sticky;
+    top: 0;
+}
+
+
+.logoutButton {
+    background-color: orange;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    width: 90%;
+}
+
+.logoutButton a {
+    text-decoration: none;
+    color: white;
+}
+
+.logoutButton:hover {
+    background-color: rgb(223, 145, 0);
+    font-weight: bold;
+    color: white;
+}
+
+.small-nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar-toggler {
+    margin: auto;
+}
+
+.large-nav{
+    border-left: 1px solid black;
+    height: 100vh;
+    text-align: center;
+}
+
+.homefeed {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: orange;
+    transform: translateX(-50%);
+}
+
+.container:hover .overlay {
+    opacity: .8;
+}
+
+.pfptext {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.profilePic {
+    vertical-align: middle;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-bottom: 5%;
+}
+
+.lg-nav-style {
+    margin-top: 10%;
+}
+
+.lg-nav-style a {
+    text-decoration: none;
+    color: black;
+    font-size: 125%;
+}
+
+.sm-nav-style a {
+    text-decoration: none;
+    color: black;
+    font-size: 125%;
+}
+
+.sm-postImg {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.lg-postImg {
+    max-height: 500px;
+    max-width: 500px;
+}
+
+#sm-post {
+    border-bottom: gray solid 2px;
+    padding: 15px 10px 10px 10px;
+    width: 90vw;
+    margin: 0;
+}
+
+#lg-post {
+    border-bottom: gray solid 2px;
+    padding: 15px 10px 10px 10px;
+    width: 70vw;
+    margin: 0;
+}
+
+.postDescription {
+    padding-top: 2%;
+    margin-bottom: 0;
+}
+
+.postDescription a {
+    color: black;
+    font-size: 130%;
+}
+
+.likeButton {
+    background-color: rgb(238, 238, 238);
+    color: orange;
+    font-size: 120%;
+}
+
+#follower a {
+    text-decoration: none; 
+    border-bottom: 2px solid orange;
+    font-size: 130%;
+    color: black;
+}
+
+#following a {
+    text-decoration: none; 
+    border-bottom: 2px solid orange;
+    font-size: 130%;
+    color: black;
+}
+
+.deleteButton {
+    background-color: rgb(238, 238, 238);
+    color: white;
+    background-color: orange;
+}
+
+.followButton {
+    background-color: rgb(238, 238, 238);
+    color: white;
+    background-color: orange;
+}
+
+.submitButton {
+    background-color: rgb(238, 238, 238);
+    color: white;
+    background-color: orange;
+}

@@ -1,0 +1,47 @@
+<%- include('partials/navtop') %>
+
+<h1>
+    <%= info[0].username %>
+</h1>
+
+<% if (following == false) {%>
+    <form action="/users/<%= info[0].username %>/follow" method="post">
+        <button class="btn followButton">Follow</button>
+    </form>
+<% } else { %>
+    <form action="/users/<%= info[0].username %>/unfollow" method="post">
+        <button class="btn followButton">Unfollow</button>
+    </form>
+<% } %> 
+
+<!-- Small screen -->
+<div class="col-md-2 d-block d-md-none">
+    <% info[0].postings.forEach(el=> { %>
+        <div id="sm-post">
+            <img class="sm-postImg" src="<%= el.img %> " alt="image">
+            <p class="postDescription">
+                <%= el.description %>
+            </p>
+            <p>
+                <%= el.timestamp %>
+            </p>
+        </div>
+    <% }); %>
+</div>
+
+<!-- Large screen -->
+<div class="col-md-3 d-none d-sm-block">
+    <% info[0].postings.forEach(el=> { %>
+        <div id="lg-post">
+            <img class="lg-postImg" src="<%= el.img %> " alt="image">
+            <p class="postDescription">
+                <%= el.description %>
+            </p>
+            <p>
+                <%= el.timestamp %>
+            </p>
+        </div>
+    <% }); %>
+</div>
+
+<%- include('partials/navbottom') %>

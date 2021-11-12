@@ -1,0 +1,10 @@
+<%- include('partials/navtop') %>
+
+<form action="/uploadProfilePic" method="POST" enctype="multipart/form-data">
+    <div>
+        <input type="file" name="image">
+    </div>
+    <button type="submit" class="btn submitButton">Submit</button>
+</form>
+
+<%- include('partials/navbottom') %>

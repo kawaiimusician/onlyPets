@@ -1,0 +1,48 @@
+<%- include('header') %>
+
+    <div class=" homefeed">
+        <div class="row homefeed">
+
+            <!-- logo -->
+            <div class="col-md-9" id="mainpage">
+                <%- include('logo') %>
+
+            <!-- Nav bar - small screen -->
+                <div class="col-md-2 d-block d-md-none small-nav navigation">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="p-4">
+                            <ul class="nav flex-column sm-nav-style">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="/notifications">Notifications</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/followers">Followers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/following">Following</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/profile">My Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/newPost">Create Post</a>
+                                </li>
+                            </ul>
+                            <button class="logoutButton btn"><a href="/logout">Logout</a></button>
+                        </div>
+                    </div>
+
+                    <nav class="navbar navbar-light bg-white">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarToggleExternalContent"
+                                aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
+                    </nav>
+                </div>

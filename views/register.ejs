@@ -1,0 +1,47 @@
+<%- include('partials/header') %> 
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Pictures -->
+            <div class="d-none d-sm-block col-md-6" id="rotatingPics">
+
+                <div class="row justify-content-center">
+                    <div class="col-sm-5 img">
+                        <img src="./assets/Landing Page Pictures/Ross_bday_Sept._8_2011_160.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-sm-5 img align-self-end">
+                        <img src="./assets/Landing Page Pictures/Screen Shot 2021-09-10 at 4.29.12 PM.png" class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-5 img">
+                        <img src="./assets/Landing Page Pictures/204908294_6218458754838734_5034886963899639683_n.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-sm-7 img">
+                        <img src="./assets/Landing Page Pictures/170464169_5831262863558327_5995034923202578619_n.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Logo and Login -->
+            <div class="col-md-6 loginSection">
+
+                <%- include('partials/logo') %> 
+                
+                <form action="/register" method="POST" class="d-grid gap-2 col-md-6 mx-auto gap-md-3">
+                        <input type="text" name="username" id="username" placeholder="Username (no spaces)" pattern="[^' ']+">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <button type="submit" class="loginButton btn">Register</button>
+                </form>
+                <div class="alertText">
+                    <% if (error) { %>
+                        <p>Username in use, please try a different one.</p>
+                    <% } %>
+                </div>
+                <p class="mt-1">Already have an account? <a href="/">Login!</a></p>
+            </div>
+        </div>
+    </div>
+
+<%- include('partials/footer') %> 

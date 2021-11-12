@@ -1,0 +1,47 @@
+<%- include('partials/navtop') %>
+
+<!-- Small screen -->
+<div id="postings" class="col-md-2 d-block d-md-none">
+    <% postings.forEach(el => { %> 
+        <div id="sm-post">
+            <img class="sm-postImg" src="<%= el.img %> " alt="image">
+            <p class="postDescription"><a href="/users/<%=el.username%>"><%= el.username %></a> :  <%= el.description %> </p>
+            <% if (el.likedBy.some(ele => ele.user == username)) { %>
+                <form action="/unlike/<%=el.username%>/<%=el._id%>" method="post">
+                    <button type="submit" class="likeButton btn"><i class="fas fa-heart"></i></button>
+                </form>
+            <% } else { %> 
+                <form action="/like/<%=el.username%>/<%=el._id%>" method="post">
+                    <button type="submit" class="likeButton btn"><i class="far fa-heart"></i></button>
+                </form>
+            <% } %> 
+            <p><%= el.timestamp %></p>
+        </div>
+    <% }); %> 
+</div>
+
+<!-- large screen -->
+<div id="postings" class="col-md-3 d-none d-sm-block">
+    <% postings.forEach(el => { %> 
+        <div id="lg-post">
+            <img class="lg-postImg" src="<%= el.img %> " alt="image">
+            <p class="postDescription"><a href="/users/<%=el.username%>"><%= el.username %></a> :  <%= el.description %> </p>
+            <% if (el.likedBy.some(ele => ele.user == username)) { %>
+                <form action="/unlike/<%=el.username%>/<%=el._id%>" method="post">
+                    <button type="submit" class="likeButton btn"><i class="fas fa-heart"></i></button>
+                </form>
+            <% } else { %> 
+                <form action="/like/<%=el.username%>/<%=el._id%>" method="post">
+                    <button type="submit" class="likeButton btn"><i class="far fa-heart"></i></button>
+                </form>
+            <% } %> 
+            <p><%= el.timestamp %></p>
+        </div>
+    <% }); %> 
+</div>
+
+
+
+
+
+<%- include('partials/navbottom') %>

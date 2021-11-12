@@ -1,0 +1,42 @@
+<%- include('partials/navtop') %>
+
+<h1>
+    <%= username %>
+</h1>
+<!-- Small screen -->
+<div class="col-md-2 d-block d-md-none">
+    <% info[0].postings.forEach(el=> { %>
+        <div id="sm-post">
+            <form action="/post/delete/<%= el._id %> " method="post">
+                <img class="sm-postImg" src="<%= el.img %> " alt="image">
+                <p class="postDescription">
+                    <%= el.description %>
+                </p>
+                <p>
+                    <%= el.timestamp %>
+                </p>
+                <button type="submit" class="btn deleteButton">Delete Post</button>
+            </form>
+        </div>
+        <% }); %>
+</div>
+
+<!-- Large screen -->
+<div class="col-md-3 d-none d-sm-block">
+    <% info[0].postings.forEach(el=> { %>
+        <div id="lg-post">
+            <form action="/post/delete/<%= el._id %> " method="post">
+                <img class="lg-postImg" src="<%= el.img %> " alt="image">
+                <p class="postDescription">
+                    <%= el.description %>
+                </p>
+                <p>
+                    <%= el.timestamp %>
+                </p>
+                <button type="submit" class="btn deleteButton">Delete Post</button>
+            </form>
+        </div>
+        <% }); %>
+</div>
+
+<%- include('partials/navbottom') %>

@@ -1,0 +1,16 @@
+<%- include('partials/navtop') %>
+
+<h1>
+    Followers
+</h1>
+<div>
+    <ul>
+        <% data[0].followers.forEach(el=> { %>
+            <li><div id=follower>
+                <a href="/users/<%=el.followerName%>"><%= el.followerName %></a>
+            </div></li>
+        <% }); %> 
+    </ul>
+</div>
+
+<%- include('partials/navbottom') %>

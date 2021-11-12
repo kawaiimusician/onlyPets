@@ -1,0 +1,51 @@
+
+            </div>
+
+
+
+            <!-- nav bar - lg screen -->
+            <div class="col-md-3 d-none d-sm-block large-nav navigation">
+                <ul class="nav flex-column lg-nav-style">
+                    <!-- profile picture -->
+                    <li class="nav-item showtext">
+                        <a href="/changeProfilePic">
+                            <div class="container">
+                                <img src="<%= profilePic %>" class="profilePic">
+                                <div class="overlay">
+                                    <div class="pfptext">Change Picture</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <h3>
+                            <%= username %> 
+                        </h3>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="/notifications">Notifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/followers">Followers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/following">Following</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile">My Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/newPost">Create Post</a>
+                    </li>
+                </ul>
+                <form action="/logout">
+                    <button class="logoutButton btn">Logout</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<%- include('footer') %> 
