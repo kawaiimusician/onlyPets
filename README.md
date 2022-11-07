@@ -1,5 +1,4 @@
 # OnlyPets
-[Check it out on Heroku!](https://onlypets.herokuapp.com/)
 
 This is my final project for the ACC Software Developer Bootcamp. The task was to create a fully functional website utilizing authentication methods, databases, CRUD functionality, and responsive design. Along with the base requirements I also decided to use AWS S3 to store the images posted to the site.
 
